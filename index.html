@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="en">
+    <meta name="author" content="Tu nombre o nombre de tu organización">
+    <meta name="description" content="Calculadora de notas musicales (tono) a frecuencia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Calculator Music Notes (Pitch) to Frequency">
+    <meta property="og:description" content="Calculadora de notas musicales (tono) a frecuencia">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculator Music Notes (Pitch) to Frequency">
+    <meta name="twitter:description" content="Calculadora de notas musicales (tono) a frecuencia">
+    <title>Calculator Music Notes (Pitch) to Frequency</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <h1 class="title">Music Notes (Pitch) to Frequency calculator</h1>
+            <div class="container">
+                <form class="form form-1">
+                    <h2>Music Note to Frequency</h2>
+                    <div class="form-group">
+                        <select id="note-input" class="input-field blue">
+                            <option value="C">C</option>
+                            <option value="C#">C#</option>
+                            <option value="D">D</option>
+                            <option value="D#">D#</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="F#">F#</option>
+                            <option value="G">G</option>
+                            <option value="G#">G#</option>
+                            <option value="A" selected>A</option>
+                            <option value="A#">A#</option>
+                            <option value="B">B</option>
+                        </select>
+                    </div>
+                    <small>Text your acoustic index</small>
+                    <div class="form-group">
+                        <select id="index-input" class="input-field blue">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <small>Text your frequency reference if it is different from 440</small>
+                    <div class="form-group">
+                        <input id="frequency-reference-input" type="text" class="input-field blue"
+                            placeholder="440 (Reference frequency)">
+                        <small class="small-text">Hz</small>
+                    </div>
+                    <button type="submit" class="btn blue" id="frequency-result-button">Submit</button>
+                    <div id="frequency-result" class="result"></div>
+                </form>
+
+                <form class="form">
+                    <h2>Frequency to Music Note</h2>
+                    <div class="form-group">
+                        <input id="frequency-input" type="text" class="input-field red" placeholder="440">
+                        <small class="small-text">Hz</small>
+                    </div>
+                    <button type="submit" class="btn red" id="note-result-button">Submit</button>
+                    <div id="note-result" class="result"></div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p class="footer-text">You are more than welcome to check my web pages and my contributions &#x2764;</p>
+            <div class="footer-container">
+                <div class="footer-item">
+                    <a href="https://github.com/abdielalvarez" target="_blank">Mi GitHub</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://medium.com/@abdy4lvarez" target="_blank">My Medium</a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://abdielalvarez.com/" target="_blank">abdielalvarez.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
