@@ -1,0 +1,14 @@
+@keyframes heartbeat-animation {
+    0% { transform: scale(1); opacity: 1; }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite alternate, heartbeat-animation 2s 0.5s infinite;
+    border: 1px solid rgb(225, 232, 225) !important;
+    background-color: rgb(240, 246, 240) !important;
+    border-radius: 50px;
+}   
