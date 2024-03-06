@@ -5,6 +5,7 @@ html, body {
     font-style: normal;
     margin: 0;
     height: 100%;
+    background-color: #efe6f0;
 }
 
 html, body {
@@ -51,11 +52,21 @@ footer {
     box-sizing: border-box;
 }
 
+.subcontainer-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .subcontainer-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#chart-container {
+    margin: 0 0 0 30px;
 }
 
 .container {
@@ -165,6 +176,19 @@ footer {
     opacity: 0.8;
 }
 
+.contact-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-section a {
+    margin: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0000EE;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -193,4 +217,14 @@ footer {
 
 .footer-item a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 645px) {
+    #chart-container {
+        margin: 30px 0 0;
+    }
+
+    .contact-section {
+        margin: 30px 0 0;
+    }
 }
